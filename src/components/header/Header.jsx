@@ -74,8 +74,8 @@ const Header = () => {
     <div className='header section__padding'>
       <div className="header-content">
         <div>
-          <h1 style={{color:"black" , textAlign:"center"}}>Discover The Market Of Futures</h1>
-          {/* <img className='shake-vertical' src={coin} alt="" /> */}
+          <h1 style={{color:"white" , textAlign:"center"}}>Discover The Market Of Futures</h1>
+          { <img className='shake-vertical' src={coin} alt="" /> }
         </div>
       </div>
       

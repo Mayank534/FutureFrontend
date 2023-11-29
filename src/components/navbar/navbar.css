@@ -26,6 +26,9 @@
 }
 .navbar-links_logo img{
   margin-right: 5px;
+  width: 80px;
+  border-radius: 50%;
+
 }
 .navbar-links_container{
   display: flex;
