@@ -82,6 +82,7 @@ const Navbar = () => {
             <Link to="/register">
               <button type='button' className='secondary-btn'>Sign Up</button>
             </Link>
+            <button type='button' className='secondary-btn' onClick={connected ? disconnect : connect}>{connected ? "Disconnect" : "Connect"}</button>
           </>
         )}
 
