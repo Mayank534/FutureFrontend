@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
+
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png'
 import { Link } from "react-router-dom";
+import { accountContext } from '../../Context';
 
 const Menu = () => (
   <>
@@ -13,6 +16,7 @@ const Menu = () => (
 )
 
 const Navbar = () => {
+  const {setAccount}= useContext(accountContext);
   const [connected, setConnection] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false)
   const [user, setUser] = useState(false)
@@ -29,6 +33,7 @@ const Navbar = () => {
       try {
         const response = await window.aptos.connect();
         setConnection(true);
+        setAccount(response.address);
         console.log(response);
 
       } catch (error) {

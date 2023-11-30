@@ -1,80 +1,142 @@
-.profile-page{
+.contents {
     display: flex;
     flex-direction: column;
     color: white;
     font-family: var(--font-family);
-    justify-content: center;
-
-}
-.contents{
+    gap: 10px;
+  }
+  
+  .top-row {
     display: flex;
     gap: 10px;
-
-}
-.primary-btn2
-{
-  background: rgb(242, 242, 119);
-  border-radius: 10px;
-  padding:.6rem .8rem;
-  width: 5rem;
-}
-.secondary-btn2
-{
-  background: transparent;
-  border: 1px solid red;
-  margin: 0 1rem;
-  color: red;
-  border-radius: 10px;
-  padding:.6rem .8rem;
-  width: 5rem;
-}
-.pro{
-    display: flex;
-    gap: 5px;
-}
-.profile-input{
-    padding: .6rem .5rem;
-    width: 50%;
-    
-}
-.profile-content{
-    width: 40%;
+  }
+  
+  .place-order-box{
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-    padding: 20px;
-    gap: 1rem;
+    /* flex: 1; */
+    padding: 10px;
     border-radius: 10px;
-    border: 1px solid white;
-
-}
-.profile-img{
-    width: 14vw;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-.order-book-content{
-    width: 60%;
-    text-align:center;
+    border: 1px solid #2ed8a7;
+  }
+  
+  .order-book-box {
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
-}
-.func-content{
+    text-align: center;
+    /* flex: 1; */
+    padding: 10px;
     border-radius: 10px;
-    border: 1px solid white;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    height: 40vh;
-}
-.buy{
-    border-right: 1px solid white;
-    padding: 1rem;
+    border: 1px solid #2ed8a7;
+  }
+  
+  .bottom-row {
+    width: 100%;
+  }
+  
+  .personal-orders-box {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2ed8a7;
+  }
+  
 
-}
-.sell{
-    padding: 1rem;
-}
 
+  .profile-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2ed8a7;
+  }
+  
+  .order-book-content {
+    width: 70%;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #2ed8a7;
+  }
+  
+  .func-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .buy {
+    border-right: 1px solid #2ed8a7;
+  }
+  
+  .quantity-input {
+    margin-top: 10px;
+  }
+  
+  .quantity-input label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px; /* Adjusted margin-top */
+  }
+  
+  .quantity-input input {
+    border: 1px solid #2ed8a7;
+    border-radius: 5px;
+    padding: 5px;
+    background: transparent;
+    color: #2ed8a7;
+    outline: none;
+    width: 100%;
+  }
+  
+  .quantity-input h5 {
+    margin-top: 5px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center; /* Align buttons to the right */
+    margin-top: 10px;
+  }
+  
+  .buy-button {
+    padding: 8px 16px;
+    margin-left: 0px;
+    background-color: #089c0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sell-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #cf0a0a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #0f4d33;
+  }
+  
+  .sell-button:hover {
+    background-color: #701919
+  }
+  .personal-orders-box .buy {
+    
+    color: #089c0d;
+  }
+  
+  .personal-orders-box .sell {
+    
+    color: #cf0a0a;
+  }
