@@ -1,10 +1,41 @@
-
-.contents{
+.profile-page{
     display: flex;
+    flex-direction: column;
     color: white;
     font-family: var(--font-family);
+    justify-content: center;
+
+}
+.contents{
+    display: flex;
     gap: 10px;
 
+}
+.primary-btn2
+{
+  background: rgb(242, 242, 119);
+  border-radius: 10px;
+  padding:.6rem .8rem;
+  width: 5rem;
+}
+.secondary-btn2
+{
+  background: transparent;
+  border: 1px solid red;
+  margin: 0 1rem;
+  color: red;
+  border-radius: 10px;
+  padding:.6rem .8rem;
+  width: 5rem;
+}
+.pro{
+    display: flex;
+    gap: 5px;
+}
+.profile-input{
+    padding: .6rem .5rem;
+    width: 50%;
+    
 }
 .profile-content{
     width: 40%;
@@ -26,14 +57,24 @@
 .order-book-content{
     width: 60%;
     text-align:center;
-    border-radius: 10px;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
 }
 .func-content{
+    border-radius: 10px;
+    border: 1px solid white;
     display:grid;
     grid-template-columns:1fr 1fr;
+    height: 40vh;
 }
 .buy{
     border-right: 1px solid white;
+    padding: 1rem;
+
+}
+.sell{
+    padding: 1rem;
 }
 
