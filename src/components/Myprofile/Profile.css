@@ -25,5 +25,15 @@
 }
 .order-book-content{
     width: 60%;
-    text-align: center;
+    text-align:center;
+    border-radius: 10px;
+    border: 1px solid white;
 }
+.func-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.buy{
+    border-right: 1px solid white;
+}
+
